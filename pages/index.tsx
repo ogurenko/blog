@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
 import Container from "../components/container";
 import { Stack, Flex } from "@chakra-ui/react";
-import { getArticles, getCategories } from "../../frontend3/lib/api";
+import { getArticles, getCategories } from "../lib/api";
 import Card from "../components/card";
 
 const HomePage = ({ articles }) => {
