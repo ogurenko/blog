@@ -6,10 +6,6 @@ import BlogArticleLayout from "../../components/blogArticleLayout";
 import MDXComponents from "../../components/MDXComponents";
 
 
-const url = "https://draganvucinic.com";
-const title = "Blog – Dragan Vucinic";
-const description =
-  "Everything tech related, even more ...";
 
 
 const Article = ({ article, content }) => {

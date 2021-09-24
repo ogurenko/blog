@@ -43,7 +43,7 @@ const Card: FC<CardProps> = ({ article }) => {
             fontSize={"2xl"}
             fontFamily={"body"}
           >
-            <ChakraLink href={`http://localhost:3000/article/${article.slug}`}>
+            <ChakraLink href={`https://www.draganvucinic.com/article/${article.slug}`}>
               {article.title}
             </ChakraLink>
           </Heading>
