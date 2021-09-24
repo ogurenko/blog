@@ -1,0 +1,24 @@
+query Article($slug: String!) {
+  articles(where: { slug: $slug }) {
+    slug
+    title
+    content
+    description
+    author {
+      name
+    }
+    image {
+      url
+    }
+    category {
+      id
+      name
+      created_at
+      updated_at
+      slug
+    }
+    published_at
+    created_at
+    updated_at
+  }
+}

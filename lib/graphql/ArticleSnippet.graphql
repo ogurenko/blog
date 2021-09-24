@@ -1,0 +1,22 @@
+fragment ArticleSnippet on Article {
+  id
+  slug
+  title
+  content
+  description
+  author {
+    name
+  }
+  category {
+    id
+    name
+    created_at
+    updated_at
+    slug
+  }
+  image {
+    url
+  }
+  created_at
+  updated_at
+}

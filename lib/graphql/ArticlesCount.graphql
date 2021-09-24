@@ -1,0 +1,7 @@
+query ArticlesCount {
+  articlesConnection {
+    aggregate {
+      totalCount
+    }
+  }
+}
