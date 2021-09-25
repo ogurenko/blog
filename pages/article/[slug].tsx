@@ -2,7 +2,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import { getArticles, getArticle, getCategories } from "../../lib/api";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
-import BlogArticleLayout from "../../components/blogArticleLayout";
+import BlogArticleLayout from "../../layout/blogArticleLayout"
 import MDXComponents from "../../components/MDXComponents";
 
 

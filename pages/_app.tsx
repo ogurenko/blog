@@ -8,6 +8,7 @@ import { AppProps } from "next/dist/shared/lib/router/router";
 import { DefaultSeo } from "next-seo";
 import theme from "../components/theme";
 import SEO from '../next-seo.config'
+import Head  from "next/head";
 
 
 const GlobalStyle = ({ children }) => {
@@ -32,7 +33,7 @@ const GlobalStyle = ({ children }) => {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background: ${colorMode === "light" ? "white" : "#171923"};
+            background: ${colorMode === "light" ? "white" : "#1A202C"};
           }
         `}
       />
@@ -45,7 +46,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider resetCSS={false} theme={theme}>
       <GlobalStyle>
-        <DefaultSeo {...SEO}/>
+        <DefaultSeo {...SEO} />
+        <Head>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+          />
+        </Head>
         <Component {...pageProps} />
       </GlobalStyle>
     </ChakraProvider>

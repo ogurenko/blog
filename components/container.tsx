@@ -23,9 +23,8 @@ const StickyNav = styled(Flex)`
 `;
 
 const Container: FC = ({ children }: Props) => {
-  // const { colorMode } = useColorMode();
 
-  const bg = useColorModeValue("white", "gray.900");
+  const bg = useColorModeValue("white", "gray.800");
 
   const color = useColorModeValue("black", "white");
 
