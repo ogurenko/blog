@@ -1,2 +1,2 @@
 # Blog
-### My blog made by Nextjs, GraphQL, Typescript 
+### My blog made by Nextjs, GraphQL, Typescript and Strapi.
