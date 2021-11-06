@@ -1,11 +1,8 @@
 import {
-  Text,
   Flex,
   Button,
   Spacer,
   Container,
-  Stack,
-  Heading,
   useColorModeValue,
 } from "@chakra-ui/react";
 import Seo from "../components/seo";

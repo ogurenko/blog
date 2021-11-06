@@ -4,8 +4,6 @@ import { Stack, Flex } from "@chakra-ui/react";
 import { getArticles, getCategories } from "../lib/api";
 import Card from "../components/card";
 
-
-
 const HomePage = ({ articles }) => {
   return (
     <>
@@ -15,7 +13,7 @@ const HomePage = ({ articles }) => {
           spacing={8}
           justifyContent="center"
           alignItems="flex-start"
-          m="0 auto 4rem auto"
+          m="auto"
           maxWidth="700px"
         >
           <Flex
@@ -43,7 +41,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const categories = (await getCategories()) || [];
 
   return {
-    props: { articles },
+    props: { articles: articles.sort((a, b) => b.created_at - a.created_at) },
   };
 };
 
