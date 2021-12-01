@@ -11,6 +11,8 @@ import { FC } from "react";
 import { ArticleSnippetFragment } from "../lib/graphql/generated";
 import { format } from "date-fns";
 
+
+
 interface CardProps {
   article: ArticleSnippetFragment;
 }
@@ -42,7 +44,7 @@ const Card: FC<CardProps> = ({ article }) => {
             fontFamily={"body"}
           >
             <ChakraLink
-              href={`https://blog-theta-wine.vercel.app/${article.slug}`}
+              href={`https://blog-theta-wine.vercel.app/article/${article.slug}`}
             >
               {article.title}
             </ChakraLink>
