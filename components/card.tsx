@@ -11,8 +11,6 @@ import { FC } from "react";
 import { ArticleSnippetFragment } from "../lib/graphql/generated";
 import { format } from "date-fns";
 
-
-
 interface CardProps {
   article: ArticleSnippetFragment;
 }

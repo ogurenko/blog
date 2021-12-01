@@ -10,7 +10,7 @@ const Seo = ({ article }) => {
         title: article.title,
         site_name: "Dragan Vucinic",
         description: article.summary,
-        url: `https://blog-theta-wine.vercel.app/`,
+        url: `https://blog-theta-wine.vercel.app`,
         type: "article",
       }}
     />
