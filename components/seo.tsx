@@ -5,12 +5,12 @@ const Seo = ({ article }) => {
     <NextSeo
       title={article.title}
       description={article.summary}
-      canonical={`http://www.draganvucinic.com/article/${article.slug}`}
+      canonical={`https://blog-theta-wine.vercel.app/article/${article.slug}`}
       openGraph={{
         title: article.title,
         site_name: "Dragan Vucinic",
         description: article.summary,
-        url: `https://www.draganvucinic.com`,
+        url: `https://blog-theta-wine.vercel.app/`,
         type: "article",
       }}
     />

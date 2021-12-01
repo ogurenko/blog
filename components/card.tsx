@@ -43,7 +43,9 @@ const Card: FC<CardProps> = ({ article }) => {
             fontSize={"2xl"}
             fontFamily={"body"}
           >
-            <ChakraLink href={`https://draganvucinic.com/article/${article.slug}`}>
+            <ChakraLink
+              href={`https://blog-theta-wine.vercel.app/${article.slug}`}
+            >
               {article.title}
             </ChakraLink>
           </Heading>
@@ -51,9 +53,7 @@ const Card: FC<CardProps> = ({ article }) => {
         </Stack>
 
         <Stack direction={"column"} spacing={0} fontSize={"sm"}>
-          <Text>
-              {format(new Date(article.created_at), "d MMM yyyy")}
-          </Text>
+          <Text>{format(new Date(article.created_at), "d MMM yyyy")}</Text>
         </Stack>
       </Box>
     </Center>
