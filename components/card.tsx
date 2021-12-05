@@ -43,9 +43,7 @@ const Card: FC<CardProps> = ({ article }) => {
             fontSize={"2xl"}
             fontFamily={"body"}
           >
-            <ChakraLink
-              href={`https://blog-theta-wine.vercel.app/article/${article.slug}`}
-            >
+            <ChakraLink href={`${process.env.NEXT_PUBLIC_URL}/${article.slug}`}>
               {article.title}
             </ChakraLink>
           </Heading>

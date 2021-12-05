@@ -5,7 +5,7 @@ const SEO = {
   openGraph: {
     type: "website",
     locale: "sr_Latn_RS",
-    url: "https://blog-theta-wine.vercel.app",
+    url: "https://www.draganvucinic.com",
     site_name: "Moj Blog",
   },
   twitter: {
