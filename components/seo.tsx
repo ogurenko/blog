@@ -5,7 +5,7 @@ const Seo = ({ article }) => {
     <NextSeo
       title={article.title}
       description={article.summary}
-      canonical={`${process.env.NEXT_PUBLIC_URL}/${article.slug}`}
+      canonical={`${process.env.NEXT_PUBLIC_URL}/article/${article.slug}`}
       openGraph={{
         title: article.title,
         site_name: "Dragan Vucinic",
