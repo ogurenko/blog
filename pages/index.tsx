@@ -41,7 +41,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const categories = (await getCategories()) || [];
 
   return {
-    props: { articles: articles.sort((a, b) => b.created_at - a.created_at) },
+    props: { articles: articles.sort((a, b) => a.created_at - b.created_at) },
   };
 };
 
