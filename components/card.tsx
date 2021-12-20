@@ -44,7 +44,7 @@ const Card: FC<CardProps> = ({ article }) => {
             fontFamily={"body"}
           >
             <ChakraLink
-              href={`${process.env.NEXT_PUBLIC_URL}/article/${article.slug}`}
+              href={`https://www.draganvucinic.com/article/${article.slug}`}
             >
               {article.title}
             </ChakraLink>
