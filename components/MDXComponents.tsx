@@ -8,7 +8,7 @@ const MDXComponents = {
   ),
   code: (props: any) => <CodeBlock {...props} />,
   img: (props: any) => (
-    <img  {...props} alt="" />
+    <img  {...props} alt="" width="100%"/>
   ),
   inlineCode: (props: any) => <code {...props} style={{ color: "lightcoral" }} />,
   pre: (props:any) => <pre style={{ width: "100%" }} {...props} />,
