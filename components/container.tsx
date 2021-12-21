@@ -1,9 +1,4 @@
-import {
-  Flex,
-  useColorModeValue,
-  Box,
-  Button,
-} from "@chakra-ui/react";
+import { Flex, useColorModeValue, Box, Button, Avatar } from "@chakra-ui/react";
 import Link from "next/link";
 import styled from "@emotion/styled";
 import { FC, ReactNode } from "react";
@@ -23,7 +18,6 @@ const StickyNav = styled(Flex)`
 `;
 
 const Container: FC = ({ children }: Props) => {
-
   const bg = useColorModeValue("white", "gray.800");
 
   const color = useColorModeValue("black", "white");
@@ -54,7 +48,11 @@ const Container: FC = ({ children }: Props) => {
               textDecoration="none"
               _hover={{ backgroundColor: "none" }}
             >
-              <h2>Blog</h2>
+              <Avatar
+                size="md"
+                name="chakra-ui"
+                src="https://res.cloudinary.com/dragardelo/image/upload/v1640084867/blog/SlikaLinkedin_aonobz.jpg"
+              />
             </Button>
           </Link>
         </Box>
