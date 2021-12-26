@@ -2,6 +2,7 @@ import { Flex, useColorModeValue, Box, Button, Avatar } from "@chakra-ui/react";
 import Link from "next/link";
 import styled from "@emotion/styled";
 import { FC, ReactNode } from "react";
+import { Footer } from "./footer";
 
 import DarkModeSwitch from "./darkModeSwitch";
 
@@ -68,9 +69,10 @@ const Container: FC = ({ children }: Props) => {
         mt={[4, 8, 8]}
       >
         {children}
+        <Footer />
       </Flex>
     </>
   );
-};
+}
 
 export default Container;
