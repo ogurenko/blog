@@ -1,4 +1,10 @@
-import { Box, HStack, Container, ButtonGroup, IconButton } from "@chakra-ui/react";
+import {
+  Box,
+  HStack,
+  Container,
+  ButtonGroup,
+  IconButton,
+} from "@chakra-ui/react";
 import { Text, TextProps } from "@chakra-ui/layout";
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
@@ -6,7 +12,7 @@ export const Footer = (props: TextProps) => (
   <Container maxW="800px">
     <HStack justify="space-between" py={6}>
       <Box as="footer" role="contentinfo">
-        <Text {...props} >&copy; {new Date().getFullYear()} Dragan Vucinic</Text>
+        <Text {...props}>&copy; {new Date().getFullYear()} Dragan Vucinic</Text>
       </Box>
       <ButtonGroup variant="ghost" color="gray.600">
         <IconButton

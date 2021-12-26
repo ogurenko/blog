@@ -2,14 +2,10 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import { getArticles, getArticle, getCategories } from "../../lib/api";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
-import BlogArticleLayout from "../../layout/blogArticleLayout"
+import BlogArticleLayout from "../../layout/blogArticleLayout";
 import MDXComponents from "../../components/MDXComponents";
 
-
-
-
 const Article = ({ article, content }) => {
-
   return (
     <>
       <BlogArticleLayout article={article}>
@@ -44,7 +40,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
     const content = await serialize(article[0].content);
 
-    
     return {
       props: {
         article,
