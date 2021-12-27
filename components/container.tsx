@@ -49,7 +49,7 @@ const Container: FC = ({ children }: Props) => {
               textDecoration="none"
               _hover={{ backgroundColor: "none" }}
             >
-              <Avatar size="md" name="chakra-ui" src="/avatar.jpg" />
+              <Avatar ignoreFallback={true} size="md" src="/avatar.jpg" />
             </Button>
           </Link>
         </Box>
