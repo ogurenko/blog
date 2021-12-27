@@ -49,11 +49,7 @@ const Container: FC = ({ children }: Props) => {
               textDecoration="none"
               _hover={{ backgroundColor: "none" }}
             >
-              <Avatar
-                size="md"
-                name="chakra-ui"
-                src="https://res.cloudinary.com/dragardelo/image/upload/v1640084867/blog/SlikaLinkedin_aonobz.jpg"
-              />
+              <Avatar size="md" name="chakra-ui" src="/avatar.jpg" />
             </Button>
           </Link>
         </Box>
