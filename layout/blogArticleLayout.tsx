@@ -26,7 +26,7 @@ const BlogArticleLayout = ({ children, article }): JSX.Element => {
         >
           <Link href="/" passHref>
             <Button bg={bg} variant="ghost">
-              Nazad
+              Back
             </Button>
           </Link>
           <Spacer />

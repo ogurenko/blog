@@ -4,7 +4,7 @@ const SEO = {
   description: "Tech Talk",
   openGraph: {
     type: "website",
-    locale: "sr_Latn_RS",
+    locale: "en_US",
     url: "https://www.draganvucinic.com",
     site_name: "Moj Blog",
   },

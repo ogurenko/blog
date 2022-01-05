@@ -1,15 +1,13 @@
-import {
-  ChakraProvider,
-  useColorMode
-} from "@chakra-ui/react";
+import { ChakraProvider, useColorMode } from "@chakra-ui/react";
 import { css, Global } from "@emotion/react";
 import { AppProps } from "next/dist/shared/lib/router/router";
 // Make a default seo for all app
 import { DefaultSeo } from "next-seo";
 import theme from "../components/theme";
-import SEO from '../next-seo.config'
-import Head  from "next/head";
-
+import SEO from "../next-seo.config";
+import Head from "next/head";
+import { usePageViews } from "../hooks/usePageViews";
+import { Analytics } from "../lib/analytics";
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode();
@@ -43,9 +41,11 @@ const GlobalStyle = ({ children }) => {
 };
 
 function MyApp({ Component, pageProps }: AppProps) {
+  usePageViews();
   return (
     <ChakraProvider resetCSS={false} theme={theme}>
       <GlobalStyle>
+        <Analytics />
         <DefaultSeo {...SEO} />
         <Head>
           <meta
