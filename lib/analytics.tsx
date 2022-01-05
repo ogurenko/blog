@@ -5,10 +5,11 @@ export const Analytics = (props: ScriptProps) => {
   return (
     <>
       <Script
+        id="gtag1"
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
-      <Script strategy="afterInteractive">
+      <Script id="gtag2" strategy="afterInteractive">
         {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments)}
